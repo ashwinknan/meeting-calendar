@@ -26,7 +26,7 @@ function App() {
       <h1 className="my-4 text-center">Ashwin's Meeting Calendar</h1>
       <div className="row">
         {meetingSlots.map((slot, index) => (
-          <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index}>  {/* Added mb-4 for bottom margin */}
+          <div className="col-lg-4 col-md-12 col-sm-12 mb-4" key={index}>  {/* Added mb-4 for bottom margin */}
             <div className="card custom-card">
               <div className="card-header">{slot.title}</div>
               <div className="card-body">
