@@ -15,8 +15,14 @@ h1 {
   font-weight: bold;
 }
 
+h1.text-center {
+  font-size: 2.5rem;
+}
+
+
 .custom-card {
   background-color: white;
+  color: #333;
   border-radius: 12px;
   padding: 20px;
   margin: 20px;
@@ -42,7 +48,7 @@ h1 {
   font-size: 1.5em;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #333;
+  color: #000000;
 }
 
 .card-description {
@@ -50,7 +56,14 @@ h1 {
   color: #333;
 }
 
+.card-header {
+  font-weight: bold !important;
+  background-color: white !important;
+  border-bottom: 0 !important; /* Remove the border at the bottom */
+}
+
 .btn-primary {
+  margin-top: auto !important; /* Push the button to the bottom */
   background-color: #007bff;
   border: none;
   border-radius: 6px;
