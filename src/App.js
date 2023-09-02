@@ -23,15 +23,15 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="my-4 text-center">Ashwin's Meeting Calendar</h1> {/* Centered title */}
+      <h1 className="my-4 text-center">Ashwin's Meeting Calendar</h1>
       <div className="row">
         {meetingSlots.map((slot, index) => (
-          <div className="col-md-4 col-sm-12" key={index}>
-            <div className={`card custom-card d-flex flex-column`} style={{ maxWidth: '20rem', minHeight: '10rem' }}> {/* Flex styles */}
+          <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index}>  {/* Added mb-4 for bottom margin */}
+            <div className="card custom-card">
               <div className="card-header">{slot.title}</div>
-              <div className="card-body d-flex flex-column"> {/* Flex styles */}
+              <div className="card-body">
                 <p className="card-text">{slot.description}</p>
-                <a href={slot.link} className="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer"> {/* mt-auto */}
+                <a href={slot.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                   Book Slot
                 </a>
               </div>
