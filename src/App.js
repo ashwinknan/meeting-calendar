@@ -26,7 +26,7 @@ function App() {
       <h1 className="my-4 text-center">Ashwin's Meeting Calendar</h1> {/* Centered title */}
       <div className="row">
         {meetingSlots.map((slot, index) => (
-          <div className="col-md-4" key={index}>
+          <div className="col-md-4 col-sm-12" key={index}>
             <div className={`card custom-card d-flex flex-column`} style={{ maxWidth: '20rem', minHeight: '10rem' }}> {/* Flex styles */}
               <div className="card-header">{slot.title}</div>
               <div className="card-body d-flex flex-column"> {/* Flex styles */}
