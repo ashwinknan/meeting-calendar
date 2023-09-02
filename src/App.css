@@ -1,24 +1,26 @@
+/* App.css */
+
 body {
-  background-color: #f1f1f1;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Cpath d='M1 3h1v1H1V3zm2-2h1v1H3V1z' fill='%23f1f1f1'/%3E%3C/svg%3E");
   font-family: Arial, sans-serif;
 }
 
 .container {
-  background-color: white;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  font-size: 2rem;  /* Adjust the size here */
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .custom-card {
-  background-color: white;  /* Change this to a lighter color for contrast */
+  background-color: white;
   border-radius: 12px;
   padding: 20px;
   margin: 20px;
-  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);  /* This gives a 3D effect */
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.1);
   text-align: center;
   height: 100%;
 }
@@ -39,11 +41,13 @@ h1 {
 .card-title {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #333;  /* Make the text darker */
+  font-weight: bold;
+  color: #333;
 }
 
-.card-description p {
-  color: #333;  /* Make the text darker */
+.card-description {
+  font-weight: normal;
+  color: #333;
 }
 
 .btn-primary {
